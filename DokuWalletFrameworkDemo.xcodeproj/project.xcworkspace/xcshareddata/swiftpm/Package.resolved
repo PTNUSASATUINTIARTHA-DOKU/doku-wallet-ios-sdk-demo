@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "doku-wallet-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PTNUSASATUINTIARTHA-DOKU/doku-wallet-ios-sdk",
+      "state" : {
+        "revision" : "c26b0906df431f87ce182cffe8918a694bd5d85a",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify Otp View Controller-->
+        <scene sceneID="Gwz-P6-XLn">
+            <objects>
+                <viewController storyboardIdentifier="VerifyOtpViewController" id="ZnW-18-YKg" customClass="VerifyOtpViewController" customModule="DokuWalletFrameworkDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZo-vr-m6J">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcd-jG-4Op">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxw-kc-F42" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verifikasi OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exw-Ih-oic">
+                                                <rect key="frame" x="16" y="24" width="361" height="19.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="2C333C"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukkan 6 digit OTP yang telah dikirim melalui nomor ponsel " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIA-qI-aVj">
+                                                <rect key="frame" x="16" y="55.666666666666671" width="361" height="33.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="69707A"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKc-Lm-8Zf" customClass="CustomTextFieldView" customModule="DokuWalletFrameworkDemo" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="113.33333333333334" width="243" height="84"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="aPI-Ss-xX4"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpY-cZ-9PE">
+                                                <rect key="frame" x="16" y="703" width="361" height="40"/>
+                                                <color key="backgroundColor" name="E5E8EC"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="hsJ-XD-Ibu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Lanjut">
+                                                    <color key="titleColor" name="818995"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="ZnW-18-YKg" eventType="touchUpInside" id="tUJ-sk-9lT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2K-H1-dYW">
+                                                <rect key="frame" x="267" y="133.33333333333334" width="110" height="40"/>
+                                                <color key="backgroundColor" name="E5E8EC"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="REC-Pi-iTS"/>
+                                                    <constraint firstAttribute="width" constant="110" id="ppB-lv-Ert"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Kirim Ulang">
+                                                    <color key="titleColor" name="818995"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resendOtpButtonTapped:" destination="ZnW-18-YKg" eventType="touchUpInside" id="Qwg-6e-cEt"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ulangi dalam 05:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-mJ-B8k">
+                                                <rect key="frame" x="267" y="178.33333333333334" width="110" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" name="69707A"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="jRI-mJ-B8k" firstAttribute="top" secondItem="J2K-H1-dYW" secondAttribute="bottom" constant="5" id="7Ch-kD-h7I"/>
+                                            <constraint firstAttribute="bottom" secondItem="EpY-cZ-9PE" secondAttribute="bottom" constant="16" id="8YZ-vm-ShB"/>
+                                            <constraint firstItem="EpY-cZ-9PE" firstAttribute="leading" secondItem="vxw-kc-F42" secondAttribute="leading" constant="16" id="HPA-q0-bED"/>
+                                            <constraint firstItem="Exw-Ih-oic" firstAttribute="top" secondItem="vxw-kc-F42" secondAttribute="top" constant="24" id="KYn-Me-CbG"/>
+                                            <constraint firstItem="jRI-mJ-B8k" firstAttribute="trailing" secondItem="J2K-H1-dYW" secondAttribute="trailing" id="NlS-ER-m4H"/>
+                                            <constraint firstItem="Exw-Ih-oic" firstAttribute="leading" secondItem="vxw-kc-F42" secondAttribute="leading" constant="16" id="NvQ-An-tto"/>
+                                            <constraint firstItem="mKc-Lm-8Zf" firstAttribute="top" secondItem="cIA-qI-aVj" secondAttribute="bottom" constant="24" id="WCg-aF-0Ur"/>
+                                            <constraint firstAttribute="trailing" secondItem="Exw-Ih-oic" secondAttribute="trailing" constant="16" id="WnG-7F-gdp"/>
+                                            <constraint firstAttribute="trailing" secondItem="EpY-cZ-9PE" secondAttribute="trailing" constant="16" id="YiW-a1-yKA"/>
+                                            <constraint firstItem="jRI-mJ-B8k" firstAttribute="leading" secondItem="J2K-H1-dYW" secondAttribute="leading" id="aYW-Vo-hBt"/>
+                                            <constraint firstItem="mKc-Lm-8Zf" firstAttribute="leading" secondItem="vxw-kc-F42" secondAttribute="leading" constant="16" id="d6I-PW-M7N"/>
+                                            <constraint firstAttribute="trailing" secondItem="cIA-qI-aVj" secondAttribute="trailing" constant="16" id="dM4-nS-WNC"/>
+                                            <constraint firstAttribute="trailing" secondItem="J2K-H1-dYW" secondAttribute="trailing" constant="16" id="fje-i8-zMt"/>
+                                            <constraint firstItem="J2K-H1-dYW" firstAttribute="leading" secondItem="mKc-Lm-8Zf" secondAttribute="trailing" constant="8" id="jSq-q1-Nqd"/>
+                                            <constraint firstItem="cIA-qI-aVj" firstAttribute="leading" secondItem="vxw-kc-F42" secondAttribute="leading" constant="16" id="kCY-Tw-f3R"/>
+                                            <constraint firstItem="cIA-qI-aVj" firstAttribute="top" secondItem="Exw-Ih-oic" secondAttribute="bottom" constant="12" id="quL-yH-sfi"/>
+                                            <constraint firstItem="J2K-H1-dYW" firstAttribute="top" secondItem="mKc-Lm-8Zf" secondAttribute="top" constant="20" id="sJj-w4-uhy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vxw-kc-F42" firstAttribute="width" secondItem="Jcd-jG-4Op" secondAttribute="width" id="Ur0-Zz-ub3"/>
+                                    <constraint firstAttribute="bottom" secondItem="vxw-kc-F42" secondAttribute="bottom" id="XqJ-JR-PYp"/>
+                                    <constraint firstItem="vxw-kc-F42" firstAttribute="height" secondItem="Jcd-jG-4Op" secondAttribute="height" id="bDL-hJ-2ps"/>
+                                    <constraint firstAttribute="trailing" secondItem="vxw-kc-F42" secondAttribute="trailing" id="lCH-lX-Id8"/>
+                                    <constraint firstItem="vxw-kc-F42" firstAttribute="leading" secondItem="Jcd-jG-4Op" secondAttribute="leading" id="vrb-2O-Jye"/>
+                                    <constraint firstItem="vxw-kc-F42" firstAttribute="top" secondItem="Jcd-jG-4Op" secondAttribute="top" id="wqj-I8-DGU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OTF-LO-f60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jcd-jG-4Op" firstAttribute="leading" secondItem="nZo-vr-m6J" secondAttribute="leading" id="SEW-mO-Orf"/>
+                            <constraint firstItem="OTF-LO-f60" firstAttribute="bottom" secondItem="Jcd-jG-4Op" secondAttribute="bottom" id="Xnb-3T-foE"/>
+                            <constraint firstAttribute="trailing" secondItem="Jcd-jG-4Op" secondAttribute="trailing" id="bN9-vi-lpc"/>
+                            <constraint firstItem="Jcd-jG-4Op" firstAttribute="top" secondItem="OTF-LO-f60" secondAttribute="top" id="zZ9-Mx-G7O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="cIA-qI-aVj" id="UOn-IN-OZf"/>
+                        <outlet property="instructionLabel" destination="cIA-qI-aVj" id="vJJ-nn-Cnx"/>
+                        <outlet property="nextButton" destination="EpY-cZ-9PE" id="JgP-Jl-EoJ"/>
+                        <outlet property="otpTextFieldView" destination="mKc-Lm-8Zf" id="6r9-61-tyh"/>
+                        <outlet property="resendOtpButton" destination="J2K-H1-dYW" id="igF-Sz-xgp"/>
+                        <outlet property="resendOtpCountdownLabel" destination="jRI-mJ-B8k" id="2wQ-bG-rBb"/>
+                        <outlet property="scrollView" destination="Jcd-jG-4Op" id="lD2-RW-HMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhJ-Nf-dZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="2C333C">
+            <color red="0.17254901960784313" green="0.20000000000000001" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="69707A">
+            <color red="0.41176470588235292" green="0.4392156862745098" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="818995">
+            <color red="0.50588235294117645" green="0.53725490196078429" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="E5E8EC">
+            <color red="0.89803921568627454" green="0.90980392156862744" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

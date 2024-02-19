@@ -1,0 +1,1556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC0F7E922AFB5C09007FAA88 /* ViewId.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F7E912AFB5C09007FAA88 /* ViewId.swift */; };
+		CC0F7E952AFB5C43007FAA88 /* StoryboardViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F7E942AFB5C43007FAA88 /* StoryboardViewControllerProtocol.swift */; };
+		CC2A00852B30BD1100F076B1 /* QrisFeeTypeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A00842B30BD1100F076B1 /* QrisFeeTypeDescription.swift */; };
+		CC3B91EE2B836AFC008AC4C1 /* DokuWalletSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CC3B91ED2B836AFC008AC4C1 /* DokuWalletSDK */; };
+		CC59639B2B01D5E300B1CB5E /* WebviewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59639A2B01D5E300B1CB5E /* WebviewContract.swift */; };
+		CC5963A32B01D60200B1CB5E /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5963A22B01D60200B1CB5E /* WebviewViewController.swift */; };
+		CC5963A52B01D61700B1CB5E /* WebviewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5963A42B01D61700B1CB5E /* WebviewStoryboard.storyboard */; };
+		CC5963A72B0222BA00B1CB5E /* WebviewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5963A62B0222BA00B1CB5E /* WebviewConfig.swift */; };
+		CC5963A92B02231400B1CB5E /* BackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5963A82B02231400B1CB5E /* BackType.swift */; };
+		CC5963AB2B0224B900B1CB5E /* WebHttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5963AA2B0224B900B1CB5E /* WebHttpMethod.swift */; };
+		CC5963AD2B022AA800B1CB5E /* VerifyOtpStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5963AC2B022AA800B1CB5E /* VerifyOtpStruct.swift */; };
+		CC93F5C82AFB5E1C00DE47F0 /* ViewProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93F5C72AFB5E1C00DE47F0 /* ViewProtocolExtension.swift */; };
+		CC93F5CB2AFB5E5100DE47F0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93F5CA2AFB5E5100DE47F0 /* UIViewControllerExtension.swift */; };
+		CC93F5CE2AFB5E8100DE47F0 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93F5CD2AFB5E8100DE47F0 /* RouterProtocol.swift */; };
+		CC93F5D02AFB5E8800DE47F0 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93F5CF2AFB5E8800DE47F0 /* ViewProtocol.swift */; };
+		CC93F5D32AFB5F5000DE47F0 /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC93F5D22AFB5F5000DE47F0 /* MenuStoryboard.storyboard */; };
+		CC93F5D82AFB6A5C00DE47F0 /* SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93F5D72AFB6A5C00DE47F0 /* SystemColor.swift */; };
+		CCACA9142B30A1B6007D7FD2 /* QrisAmountConfirmationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACA9132B30A1B6007D7FD2 /* QrisAmountConfirmationContract.swift */; };
+		CCAEEFF32B2CB5F00083612C /* QrisInputAmountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEEFF22B2CB5F00083612C /* QrisInputAmountRouter.swift */; };
+		CCAEEFF52B2CB5F80083612C /* QrisInputAmountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEEFF42B2CB5F80083612C /* QrisInputAmountPresenter.swift */; };
+		CCAEEFF72B2CB6010083612C /* QrisInputAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEEFF62B2CB6010083612C /* QrisInputAmountViewController.swift */; };
+		CCAEEFF92B2CB6110083612C /* QrisInputAmountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAEEFF82B2CB6110083612C /* QrisInputAmountStoryboard.storyboard */; };
+		CCAEEFFB2B2CB6200083612C /* QrisInputAmountContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEEFFA2B2CB6200083612C /* QrisInputAmountContract.swift */; };
+		CCAEEFFD2B2CB6290083612C /* QrisAmountConfirmationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEEFFC2B2CB6290083612C /* QrisAmountConfirmationRouter.swift */; };
+		CCAEEFFF2B2CB6330083612C /* QrisAmountConfirmationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEEFFE2B2CB6330083612C /* QrisAmountConfirmationInteractor.swift */; };
+		CCAEF0012B2CB63B0083612C /* QrisAmountConfirmationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEF0002B2CB63B0083612C /* QrisAmountConfirmationPresenter.swift */; };
+		CCAEF0032B2CB64D0083612C /* QrisAmountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEF0022B2CB64D0083612C /* QrisAmountConfirmationViewController.swift */; };
+		CCAEF0072B2CB6720083612C /* QrisAmountConfirmationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAEF0062B2CB6720083612C /* QrisAmountConfirmationStoryboard.storyboard */; };
+		CCAEF00B2B2CB6920083612C /* QrisReceiptRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEF00A2B2CB6920083612C /* QrisReceiptRouter.swift */; };
+		CCAEF00D2B2CB69A0083612C /* QrisReceiptPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEF00C2B2CB69A0083612C /* QrisReceiptPresenter.swift */; };
+		CCAEF00F2B2CB6AC0083612C /* QrisReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEF00E2B2CB6AC0083612C /* QrisReceiptViewController.swift */; };
+		CCAEF0112B2CB6B90083612C /* QrisReceiptStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAEF0102B2CB6B90083612C /* QrisReceiptStoryboard.storyboard */; };
+		CCAEF0132B2CB6C40083612C /* QrisReceiptContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEF0122B2CB6C40083612C /* QrisReceiptContract.swift */; };
+		CCB390CC2B31ADF900B6F8FF /* PaymentQrisReceiptDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB390CB2B31ADF900B6F8FF /* PaymentQrisReceiptDataStruct.swift */; };
+		CCB390CF2B31C76D00B6F8FF /* QrisReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB390CE2B31C76D00B6F8FF /* QrisReceiptTableViewCell.swift */; };
+		CCB768C72B1EF3D40037D3B2 /* GenerateQrisInputFormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768C62B1EF3D40037D3B2 /* GenerateQrisInputFormRouter.swift */; };
+		CCB768CA2B1EF3DF0037D3B2 /* GenerateQrisInputFormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768C92B1EF3DF0037D3B2 /* GenerateQrisInputFormInteractor.swift */; };
+		CCB768CC2B1EF3E90037D3B2 /* GenerateQrisInputFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768CB2B1EF3E90037D3B2 /* GenerateQrisInputFormPresenter.swift */; };
+		CCB768CE2B1EF3F20037D3B2 /* GenerateQrisInputFormContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768CD2B1EF3F20037D3B2 /* GenerateQrisInputFormContract.swift */; };
+		CCB768D02B1EF3FB0037D3B2 /* GenerateQrisInputFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768CF2B1EF3FB0037D3B2 /* GenerateQrisInputFormViewController.swift */; };
+		CCB768D22B1EF40A0037D3B2 /* GenerateQrisInputFormStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB768D12B1EF40A0037D3B2 /* GenerateQrisInputFormStoryboard.storyboard */; };
+		CCB768D42B1EF5AA0037D3B2 /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768D32B1EF5AA0037D3B2 /* DropDownTextField.swift */; };
+		CCB768D62B1EF5F40037D3B2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768D52B1EF5F40037D3B2 /* UIViewExtension.swift */; };
+		CCB768D82B1EF6DB0037D3B2 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768D72B1EF6DB0037D3B2 /* CALayerExtension.swift */; };
+		CCB768DB2B1EF74E0037D3B2 /* CustomDropDownTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768DA2B1EF74E0037D3B2 /* CustomDropDownTextFieldView.swift */; };
+		CCB768DD2B1EF7800037D3B2 /* CustomDropDownTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB768DC2B1EF7800037D3B2 /* CustomDropDownTextFieldView.xib */; };
+		CCB768DF2B1EF9950037D3B2 /* GenerateQrisInputFormStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB768DE2B1EF9950037D3B2 /* GenerateQrisInputFormStruct.swift */; };
+		CCB963362AFB4B3300CD3EFE /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB963352AFB4B3300CD3EFE /* MenuRouter.swift */; };
+		CCB963382AFB4B3C00CD3EFE /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB963372AFB4B3C00CD3EFE /* MenuInteractor.swift */; };
+		CCB9633A2AFB4B4100CD3EFE /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB963392AFB4B4100CD3EFE /* MenuPresenter.swift */; };
+		CCB9633C2AFB4B4800CD3EFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9633B2AFB4B4800CD3EFE /* MenuViewController.swift */; };
+		CCB9633E2AFB4B5100CD3EFE /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9633D2AFB4B5100CD3EFE /* MenuContract.swift */; };
+		CCBBDD882AFDB57500FEC3FC /* WalletFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDD872AFDB57500FEC3FC /* WalletFeature.swift */; };
+		CCBBDD952AFDCAF400FEC3FC /* AccountCreationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDD942AFDCAF400FEC3FC /* AccountCreationContract.swift */; };
+		CCBBDD972AFDCAFE00FEC3FC /* AccountCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDD962AFDCAFE00FEC3FC /* AccountCreationViewController.swift */; };
+		CCBBDD992AFDCB0500FEC3FC /* AccountCreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDD982AFDCB0500FEC3FC /* AccountCreationPresenter.swift */; };
+		CCBBDD9B2AFDCBA600FEC3FC /* AccountCreationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDD9A2AFDCBA600FEC3FC /* AccountCreationInteractor.swift */; };
+		CCBBDD9D2AFDCBAE00FEC3FC /* AccountCreationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDD9C2AFDCBAE00FEC3FC /* AccountCreationRouter.swift */; };
+		CCBBDDA12AFDCD4200FEC3FC /* AccountCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBBDDA02AFDCD4200FEC3FC /* AccountCreationStoryboard.storyboard */; };
+		CCBBDDA32AFDD35400FEC3FC /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBDDA22AFDD35400FEC3FC /* DictionaryExtension.swift */; };
+		CCBE546C2B2196BB00FDC465 /* AmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE546B2B2196BB00FDC465 /* AmountType.swift */; };
+		CCBE546F2B21B6E000FDC465 /* QrisFeeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE546E2B21B6E000FDC465 /* QrisFeeType.swift */; };
+		CCBE54772B21BADC00FDC465 /* QrDisplayContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54762B21BADC00FDC465 /* QrDisplayContract.swift */; };
+		CCBE54792B21BAE800FDC465 /* QrDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54782B21BAE800FDC465 /* QrDisplayViewController.swift */; };
+		CCBE547B2B21BAF300FDC465 /* QrDisplayStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBE547A2B21BAF300FDC465 /* QrDisplayStoryboard.storyboard */; };
+		CCBE547D2B21BAFC00FDC465 /* QrDisplayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE547C2B21BAFC00FDC465 /* QrDisplayPresenter.swift */; };
+		CCBE547F2B21BB0700FDC465 /* QrDisplayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE547E2B21BB0700FDC465 /* QrDisplayInteractor.swift */; };
+		CCBE54812B21BB0D00FDC465 /* QrDisplayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54802B21BB0D00FDC465 /* QrDisplayRouter.swift */; };
+		CCBE548C2B21BDA900FDC465 /* ResultMessageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54842B21BDA900FDC465 /* ResultMessageContract.swift */; };
+		CCBE548D2B21BDA900FDC465 /* ResultMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54862B21BDA900FDC465 /* ResultMessagePresenter.swift */; };
+		CCBE548E2B21BDA900FDC465 /* ResultMessageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBE54882B21BDA900FDC465 /* ResultMessageStoryboard.storyboard */; };
+		CCBE548F2B21BDA900FDC465 /* ResultMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54892B21BDA900FDC465 /* ResultMessageViewController.swift */; };
+		CCBE54902B21BDA900FDC465 /* ResultMessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE548B2B21BDA900FDC465 /* ResultMessageRouter.swift */; };
+		CCBE54922B21BDC900FDC465 /* ResultMessageDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBE54912B21BDC900FDC465 /* ResultMessageDataStruct.swift */; };
+		CCC1D7D22AFEEBF100D31BF2 /* VerifyOtpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1D7D12AFEEBF100D31BF2 /* VerifyOtpContract.swift */; };
+		CCC1D7D42AFEEBFA00D31BF2 /* VerifyOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1D7D32AFEEBFA00D31BF2 /* VerifyOtpViewController.swift */; };
+		CCC1D7D82AFEEC0E00D31BF2 /* VerifyOtpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1D7D72AFEEC0E00D31BF2 /* VerifyOtpPresenter.swift */; };
+		CCC1D7DA2AFEEC1900D31BF2 /* VerifyOtpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1D7D92AFEEC1900D31BF2 /* VerifyOtpInteractor.swift */; };
+		CCC1D7DC2AFEEC1F00D31BF2 /* VerifyOtpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1D7DB2AFEEC1F00D31BF2 /* VerifyOtpRouter.swift */; };
+		CCC1D7E02AFEED3A00D31BF2 /* VerifyOtpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC1D7DF2AFEED3A00D31BF2 /* VerifyOtpStoryboard.storyboard */; };
+		CCC1F5322B2C837900C28C2A /* ScanQrContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1F5312B2C837900C28C2A /* ScanQrContract.swift */; };
+		CCC1F5352B2C838000C28C2A /* ScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1F5342B2C838000C28C2A /* ScanQrViewController.swift */; };
+		CCC1F5382B2C839500C28C2A /* ScanQrStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC1F5372B2C839500C28C2A /* ScanQrStoryboard.storyboard */; };
+		CCC1F53A2B2C839F00C28C2A /* ScanQrPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1F5392B2C839F00C28C2A /* ScanQrPresenter.swift */; };
+		CCC1F53C2B2C83A600C28C2A /* ScanQrInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1F53B2B2C83A600C28C2A /* ScanQrInteractor.swift */; };
+		CCC1F53E2B2C83AD00C28C2A /* ScanQrRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1F53D2B2C83AD00C28C2A /* ScanQrRouter.swift */; };
+		CCCBFE432B04C636007C7EE3 /* CreatePinWebviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCBFE422B04C636007C7EE3 /* CreatePinWebviewRouter.swift */; };
+		CCCBFE452B04C641007C7EE3 /* CreatePinWebviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCBFE442B04C641007C7EE3 /* CreatePinWebviewInteractor.swift */; };
+		CCCBFE472B04C653007C7EE3 /* CreatePinWebviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCBFE462B04C653007C7EE3 /* CreatePinWebviewPresenter.swift */; };
+		CCCCB7212AFA2CF800467B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCB7202AFA2CF800467B53 /* AppDelegate.swift */; };
+		CCCCB7232AFA2CF800467B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCB7222AFA2CF800467B53 /* SceneDelegate.swift */; };
+		CCCCB72A2AFA2CFA00467B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCCB7292AFA2CFA00467B53 /* Assets.xcassets */; };
+		CCCCB72D2AFA2CFA00467B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCCB72B2AFA2CFA00467B53 /* LaunchScreen.storyboard */; };
+		CCCE4CD22B068C190002BF54 /* AccountCreationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE4CD12B068C190002BF54 /* AccountCreationStruct.swift */; };
+		CCD31A2C2AFD16660019D1E0 /* UIActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A2B2AFD16660019D1E0 /* UIActivityIndicatorExtension.swift */; };
+		CCD31A2E2AFD170A0019D1E0 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A2D2AFD170A0019D1E0 /* AppHelper.swift */; };
+		CCD31A302AFD18EC0019D1E0 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A2F2AFD18EC0019D1E0 /* UserDefaultKey.swift */; };
+		CCD31A322AFD1D3F0019D1E0 /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A312AFD1D3F0019D1E0 /* KeychainKey.swift */; };
+		CCD31A342AFD1DB10019D1E0 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A332AFD1DB10019D1E0 /* KeychainService.swift */; };
+		CCD31A3F2AFD1E070019D1E0 /* BottomPopUpMessageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A372AFD1E070019D1E0 /* BottomPopUpMessageContract.swift */; };
+		CCD31A402AFD1E070019D1E0 /* BottomPopUpMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A392AFD1E070019D1E0 /* BottomPopUpMessagePresenter.swift */; };
+		CCD31A412AFD1E070019D1E0 /* BottomPopUpMessageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD31A3B2AFD1E070019D1E0 /* BottomPopUpMessageStoryboard.storyboard */; };
+		CCD31A422AFD1E070019D1E0 /* BottomPopUpMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A3C2AFD1E070019D1E0 /* BottomPopUpMessageViewController.swift */; };
+		CCD31A432AFD1E070019D1E0 /* BottomPopUpMessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A3E2AFD1E070019D1E0 /* BottomPopUpMessageRouter.swift */; };
+		CCD31A4C2AFD1E860019D1E0 /* BottomPopupDismissInteractionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A452AFD1E860019D1E0 /* BottomPopupDismissInteractionControllerDelegate.swift */; };
+		CCD31A4D2AFD1E860019D1E0 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A462AFD1E860019D1E0 /* BottomPopupUtils.swift */; };
+		CCD31A4E2AFD1E860019D1E0 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A472AFD1E860019D1E0 /* BottomPopupViewController.swift */; };
+		CCD31A4F2AFD1E860019D1E0 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A482AFD1E860019D1E0 /* BottomPopupDismissAnimator.swift */; };
+		CCD31A502AFD1E860019D1E0 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A492AFD1E860019D1E0 /* BottomPopupPresentAnimator.swift */; };
+		CCD31A512AFD1E860019D1E0 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A4A2AFD1E860019D1E0 /* BottomPopupTransitionHandler.swift */; };
+		CCD31A522AFD1E860019D1E0 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A4B2AFD1E860019D1E0 /* BottomPopupPresentationController.swift */; };
+		CCD31A552AFD1F0B0019D1E0 /* BottomPopUpDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A542AFD1F0B0019D1E0 /* BottomPopUpDataStruct.swift */; };
+		CCD31A572AFD22690019D1E0 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A562AFD22690019D1E0 /* UILabelExtension.swift */; };
+		CCD31A592AFD22B60019D1E0 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A582AFD22B60019D1E0 /* UIButtonExtension.swift */; };
+		CCD31A5B2AFD26E90019D1E0 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A5A2AFD26E90019D1E0 /* Credential.swift */; };
+		CCD31A5D2AFD27640019D1E0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD31A5C2AFD27640019D1E0 /* StringExtension.swift */; };
+		CCDCE1EE2AFDEF9B00F746FD /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCE1ED2AFDEF9B00F746FD /* CustomTextFieldView.swift */; };
+		CCDCE1F02AFDEFAE00F746FD /* CustomTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDCE1EF2AFDEFAE00F746FD /* CustomTextFieldView.xib */; };
+		CCDCE1F22AFE3A0800F746FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCE1F12AFE3A0800F746FD /* BaseViewController.swift */; };
+		CCDCE1F42AFE3E2500F746FD /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCE1F32AFE3E2500F746FD /* Validator.swift */; };
+		CCDCE1F62AFE3E5700F746FD /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCE1F52AFE3E5700F746FD /* UITextFieldExtension.swift */; };
+		CCF5021B2B04D3D900A50E03 /* RedirectUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5021A2B04D3D900A50E03 /* RedirectUrl.swift */; };
+		CCF5021D2B04D6C900A50E03 /* DataBindingWebviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5021C2B04D6C900A50E03 /* DataBindingWebviewPresenter.swift */; };
+		CCF5021F2B04D6D300A50E03 /* DataBindingWebviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5021E2B04D6D300A50E03 /* DataBindingWebviewInteractor.swift */; };
+		CCF502212B04D6DF00A50E03 /* DataBindingWebviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF502202B04D6DF00A50E03 /* DataBindingWebviewRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC0F7E912AFB5C09007FAA88 /* ViewId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewId.swift; sourceTree = "<group>"; };
+		CC0F7E942AFB5C43007FAA88 /* StoryboardViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CC2A00842B30BD1100F076B1 /* QrisFeeTypeDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisFeeTypeDescription.swift; sourceTree = "<group>"; };
+		CC59639A2B01D5E300B1CB5E /* WebviewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewContract.swift; sourceTree = "<group>"; };
+		CC5963A22B01D60200B1CB5E /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		CC5963A42B01D61700B1CB5E /* WebviewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebviewStoryboard.storyboard; sourceTree = "<group>"; };
+		CC5963A62B0222BA00B1CB5E /* WebviewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewConfig.swift; sourceTree = "<group>"; };
+		CC5963A82B02231400B1CB5E /* BackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackType.swift; sourceTree = "<group>"; };
+		CC5963AA2B0224B900B1CB5E /* WebHttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHttpMethod.swift; sourceTree = "<group>"; };
+		CC5963AC2B022AA800B1CB5E /* VerifyOtpStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpStruct.swift; sourceTree = "<group>"; };
+		CC93F5C72AFB5E1C00DE47F0 /* ViewProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocolExtension.swift; sourceTree = "<group>"; };
+		CC93F5CA2AFB5E5100DE47F0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CC93F5CD2AFB5E8100DE47F0 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		CC93F5CF2AFB5E8800DE47F0 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		CC93F5D22AFB5F5000DE47F0 /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
+		CC93F5D72AFB6A5C00DE47F0 /* SystemColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemColor.swift; sourceTree = "<group>"; };
+		CCACA9132B30A1B6007D7FD2 /* QrisAmountConfirmationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisAmountConfirmationContract.swift; sourceTree = "<group>"; };
+		CCAEEFF22B2CB5F00083612C /* QrisInputAmountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisInputAmountRouter.swift; sourceTree = "<group>"; };
+		CCAEEFF42B2CB5F80083612C /* QrisInputAmountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisInputAmountPresenter.swift; sourceTree = "<group>"; };
+		CCAEEFF62B2CB6010083612C /* QrisInputAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisInputAmountViewController.swift; sourceTree = "<group>"; };
+		CCAEEFF82B2CB6110083612C /* QrisInputAmountStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrisInputAmountStoryboard.storyboard; sourceTree = "<group>"; };
+		CCAEEFFA2B2CB6200083612C /* QrisInputAmountContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisInputAmountContract.swift; sourceTree = "<group>"; };
+		CCAEEFFC2B2CB6290083612C /* QrisAmountConfirmationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisAmountConfirmationRouter.swift; sourceTree = "<group>"; };
+		CCAEEFFE2B2CB6330083612C /* QrisAmountConfirmationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisAmountConfirmationInteractor.swift; sourceTree = "<group>"; };
+		CCAEF0002B2CB63B0083612C /* QrisAmountConfirmationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisAmountConfirmationPresenter.swift; sourceTree = "<group>"; };
+		CCAEF0022B2CB64D0083612C /* QrisAmountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisAmountConfirmationViewController.swift; sourceTree = "<group>"; };
+		CCAEF0062B2CB6720083612C /* QrisAmountConfirmationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrisAmountConfirmationStoryboard.storyboard; sourceTree = "<group>"; };
+		CCAEF00A2B2CB6920083612C /* QrisReceiptRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisReceiptRouter.swift; sourceTree = "<group>"; };
+		CCAEF00C2B2CB69A0083612C /* QrisReceiptPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisReceiptPresenter.swift; sourceTree = "<group>"; };
+		CCAEF00E2B2CB6AC0083612C /* QrisReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisReceiptViewController.swift; sourceTree = "<group>"; };
+		CCAEF0102B2CB6B90083612C /* QrisReceiptStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrisReceiptStoryboard.storyboard; sourceTree = "<group>"; };
+		CCAEF0122B2CB6C40083612C /* QrisReceiptContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisReceiptContract.swift; sourceTree = "<group>"; };
+		CCB390CB2B31ADF900B6F8FF /* PaymentQrisReceiptDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentQrisReceiptDataStruct.swift; sourceTree = "<group>"; };
+		CCB390CE2B31C76D00B6F8FF /* QrisReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisReceiptTableViewCell.swift; sourceTree = "<group>"; };
+		CCB768C62B1EF3D40037D3B2 /* GenerateQrisInputFormRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrisInputFormRouter.swift; sourceTree = "<group>"; };
+		CCB768C92B1EF3DF0037D3B2 /* GenerateQrisInputFormInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrisInputFormInteractor.swift; sourceTree = "<group>"; };
+		CCB768CB2B1EF3E90037D3B2 /* GenerateQrisInputFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrisInputFormPresenter.swift; sourceTree = "<group>"; };
+		CCB768CD2B1EF3F20037D3B2 /* GenerateQrisInputFormContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrisInputFormContract.swift; sourceTree = "<group>"; };
+		CCB768CF2B1EF3FB0037D3B2 /* GenerateQrisInputFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrisInputFormViewController.swift; sourceTree = "<group>"; };
+		CCB768D12B1EF40A0037D3B2 /* GenerateQrisInputFormStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenerateQrisInputFormStoryboard.storyboard; sourceTree = "<group>"; };
+		CCB768D32B1EF5AA0037D3B2 /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
+		CCB768D52B1EF5F40037D3B2 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CCB768D72B1EF6DB0037D3B2 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		CCB768DA2B1EF74E0037D3B2 /* CustomDropDownTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDownTextFieldView.swift; sourceTree = "<group>"; };
+		CCB768DC2B1EF7800037D3B2 /* CustomDropDownTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDropDownTextFieldView.xib; sourceTree = "<group>"; };
+		CCB768DE2B1EF9950037D3B2 /* GenerateQrisInputFormStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrisInputFormStruct.swift; sourceTree = "<group>"; };
+		CCB963352AFB4B3300CD3EFE /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		CCB963372AFB4B3C00CD3EFE /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		CCB963392AFB4B4100CD3EFE /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		CCB9633B2AFB4B4800CD3EFE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CCB9633D2AFB4B5100CD3EFE /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
+		CCBBDD872AFDB57500FEC3FC /* WalletFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletFeature.swift; sourceTree = "<group>"; };
+		CCBBDD942AFDCAF400FEC3FC /* AccountCreationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationContract.swift; sourceTree = "<group>"; };
+		CCBBDD962AFDCAFE00FEC3FC /* AccountCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationViewController.swift; sourceTree = "<group>"; };
+		CCBBDD982AFDCB0500FEC3FC /* AccountCreationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationPresenter.swift; sourceTree = "<group>"; };
+		CCBBDD9A2AFDCBA600FEC3FC /* AccountCreationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationInteractor.swift; sourceTree = "<group>"; };
+		CCBBDD9C2AFDCBAE00FEC3FC /* AccountCreationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationRouter.swift; sourceTree = "<group>"; };
+		CCBBDDA02AFDCD4200FEC3FC /* AccountCreationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountCreationStoryboard.storyboard; sourceTree = "<group>"; };
+		CCBBDDA22AFDD35400FEC3FC /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		CCBE546B2B2196BB00FDC465 /* AmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountType.swift; sourceTree = "<group>"; };
+		CCBE546E2B21B6E000FDC465 /* QrisFeeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrisFeeType.swift; sourceTree = "<group>"; };
+		CCBE54762B21BADC00FDC465 /* QrDisplayContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrDisplayContract.swift; sourceTree = "<group>"; };
+		CCBE54782B21BAE800FDC465 /* QrDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrDisplayViewController.swift; sourceTree = "<group>"; };
+		CCBE547A2B21BAF300FDC465 /* QrDisplayStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrDisplayStoryboard.storyboard; sourceTree = "<group>"; };
+		CCBE547C2B21BAFC00FDC465 /* QrDisplayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrDisplayPresenter.swift; sourceTree = "<group>"; };
+		CCBE547E2B21BB0700FDC465 /* QrDisplayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrDisplayInteractor.swift; sourceTree = "<group>"; };
+		CCBE54802B21BB0D00FDC465 /* QrDisplayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrDisplayRouter.swift; sourceTree = "<group>"; };
+		CCBE54842B21BDA900FDC465 /* ResultMessageContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultMessageContract.swift; sourceTree = "<group>"; };
+		CCBE54862B21BDA900FDC465 /* ResultMessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultMessagePresenter.swift; sourceTree = "<group>"; };
+		CCBE54882B21BDA900FDC465 /* ResultMessageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultMessageStoryboard.storyboard; sourceTree = "<group>"; };
+		CCBE54892B21BDA900FDC465 /* ResultMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultMessageViewController.swift; sourceTree = "<group>"; };
+		CCBE548B2B21BDA900FDC465 /* ResultMessageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultMessageRouter.swift; sourceTree = "<group>"; };
+		CCBE54912B21BDC900FDC465 /* ResultMessageDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessageDataStruct.swift; sourceTree = "<group>"; };
+		CCC1D7D12AFEEBF100D31BF2 /* VerifyOtpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpContract.swift; sourceTree = "<group>"; };
+		CCC1D7D32AFEEBFA00D31BF2 /* VerifyOtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpViewController.swift; sourceTree = "<group>"; };
+		CCC1D7D72AFEEC0E00D31BF2 /* VerifyOtpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpPresenter.swift; sourceTree = "<group>"; };
+		CCC1D7D92AFEEC1900D31BF2 /* VerifyOtpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpInteractor.swift; sourceTree = "<group>"; };
+		CCC1D7DB2AFEEC1F00D31BF2 /* VerifyOtpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpRouter.swift; sourceTree = "<group>"; };
+		CCC1D7DF2AFEED3A00D31BF2 /* VerifyOtpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyOtpStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC1F5312B2C837900C28C2A /* ScanQrContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrContract.swift; sourceTree = "<group>"; };
+		CCC1F5342B2C838000C28C2A /* ScanQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrViewController.swift; sourceTree = "<group>"; };
+		CCC1F5372B2C839500C28C2A /* ScanQrStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanQrStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC1F5392B2C839F00C28C2A /* ScanQrPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrPresenter.swift; sourceTree = "<group>"; };
+		CCC1F53B2B2C83A600C28C2A /* ScanQrInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrInteractor.swift; sourceTree = "<group>"; };
+		CCC1F53D2B2C83AD00C28C2A /* ScanQrRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrRouter.swift; sourceTree = "<group>"; };
+		CCCBFE422B04C636007C7EE3 /* CreatePinWebviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinWebviewRouter.swift; sourceTree = "<group>"; };
+		CCCBFE442B04C641007C7EE3 /* CreatePinWebviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinWebviewInteractor.swift; sourceTree = "<group>"; };
+		CCCBFE462B04C653007C7EE3 /* CreatePinWebviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinWebviewPresenter.swift; sourceTree = "<group>"; };
+		CCCCB71D2AFA2CF800467B53 /* DokuWalletFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DokuWalletFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCCB7202AFA2CF800467B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCCCB7222AFA2CF800467B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CCCCB7292AFA2CFA00467B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCCCB72C2AFA2CFA00467B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCCCB72E2AFA2CFA00467B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCE4CD12B068C190002BF54 /* AccountCreationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationStruct.swift; sourceTree = "<group>"; };
+		CCD31A2B2AFD16660019D1E0 /* UIActivityIndicatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorExtension.swift; sourceTree = "<group>"; };
+		CCD31A2D2AFD170A0019D1E0 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		CCD31A2F2AFD18EC0019D1E0 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
+		CCD31A312AFD1D3F0019D1E0 /* KeychainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
+		CCD31A332AFD1DB10019D1E0 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		CCD31A372AFD1E070019D1E0 /* BottomPopUpMessageContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopUpMessageContract.swift; sourceTree = "<group>"; };
+		CCD31A392AFD1E070019D1E0 /* BottomPopUpMessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopUpMessagePresenter.swift; sourceTree = "<group>"; };
+		CCD31A3B2AFD1E070019D1E0 /* BottomPopUpMessageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BottomPopUpMessageStoryboard.storyboard; sourceTree = "<group>"; };
+		CCD31A3C2AFD1E070019D1E0 /* BottomPopUpMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopUpMessageViewController.swift; sourceTree = "<group>"; };
+		CCD31A3E2AFD1E070019D1E0 /* BottomPopUpMessageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopUpMessageRouter.swift; sourceTree = "<group>"; };
+		CCD31A452AFD1E860019D1E0 /* BottomPopupDismissInteractionControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionControllerDelegate.swift; sourceTree = "<group>"; };
+		CCD31A462AFD1E860019D1E0 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		CCD31A472AFD1E860019D1E0 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		CCD31A482AFD1E860019D1E0 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		CCD31A492AFD1E860019D1E0 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		CCD31A4A2AFD1E860019D1E0 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		CCD31A4B2AFD1E860019D1E0 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		CCD31A542AFD1F0B0019D1E0 /* BottomPopUpDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopUpDataStruct.swift; sourceTree = "<group>"; };
+		CCD31A562AFD22690019D1E0 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		CCD31A582AFD22B60019D1E0 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		CCD31A5A2AFD26E90019D1E0 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		CCD31A5C2AFD27640019D1E0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CCDCE1ED2AFDEF9B00F746FD /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		CCDCE1EF2AFDEFAE00F746FD /* CustomTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextFieldView.xib; sourceTree = "<group>"; };
+		CCDCE1F12AFE3A0800F746FD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CCDCE1F32AFE3E2500F746FD /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		CCDCE1F52AFE3E5700F746FD /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		CCF5021A2B04D3D900A50E03 /* RedirectUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectUrl.swift; sourceTree = "<group>"; };
+		CCF5021C2B04D6C900A50E03 /* DataBindingWebviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBindingWebviewPresenter.swift; sourceTree = "<group>"; };
+		CCF5021E2B04D6D300A50E03 /* DataBindingWebviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBindingWebviewInteractor.swift; sourceTree = "<group>"; };
+		CCF502202B04D6DF00A50E03 /* DataBindingWebviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBindingWebviewRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCCCB71A2AFA2CF800467B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3B91EE2B836AFC008AC4C1 /* DokuWalletSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC0F7E8F2AFB5BF1007FAA88 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CC0F7E912AFB5C09007FAA88 /* ViewId.swift */,
+				CC93F5D72AFB6A5C00DE47F0 /* SystemColor.swift */,
+				CCD31A2F2AFD18EC0019D1E0 /* UserDefaultKey.swift */,
+				CCD31A312AFD1D3F0019D1E0 /* KeychainKey.swift */,
+				CCBBDD872AFDB57500FEC3FC /* WalletFeature.swift */,
+				CC5963A82B02231400B1CB5E /* BackType.swift */,
+				CC5963AA2B0224B900B1CB5E /* WebHttpMethod.swift */,
+				CCBE546B2B2196BB00FDC465 /* AmountType.swift */,
+				CCBE546E2B21B6E000FDC465 /* QrisFeeType.swift */,
+				CC2A00842B30BD1100F076B1 /* QrisFeeTypeDescription.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		CC0F7E932AFB5C34007FAA88 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC0F7E942AFB5C43007FAA88 /* StoryboardViewControllerProtocol.swift */,
+				CC93F5CD2AFB5E8100DE47F0 /* RouterProtocol.swift */,
+				CC93F5CF2AFB5E8800DE47F0 /* ViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CC34EDA52B1DD00600450AB8 /* GenerateQris */ = {
+			isa = PBXGroup;
+			children = (
+				CC34EDA82B1DD39B00450AB8 /* InputForm */,
+				CC34EDA92B1DD3A300450AB8 /* QrDisplay */,
+			);
+			path = GenerateQris;
+			sourceTree = "<group>";
+		};
+		CC34EDA72B1DD20A00450AB8 /* PaymentQris */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F5362B2C838500C28C2A /* QrisReceipt */,
+				CCA767C52B2C35C300D44855 /* QrisAmountConfirmation */,
+				CCA767C42B2C357F00D44855 /* QrisInputAmount */,
+				CCA767C22B2C357100D44855 /* ScanQr */,
+			);
+			path = PaymentQris;
+			sourceTree = "<group>";
+		};
+		CC34EDA82B1DD39B00450AB8 /* InputForm */ = {
+			isa = PBXGroup;
+			children = (
+				CC34EDAE2B1DD3C900450AB8 /* Contract */,
+				CC34EDAD2B1DD3C500450AB8 /* View */,
+				CC34EDAC2B1DD3C000450AB8 /* Presenter */,
+				CC34EDAB2B1DD3B700450AB8 /* Interactor */,
+				CC34EDAA2B1DD3B000450AB8 /* Router */,
+			);
+			path = InputForm;
+			sourceTree = "<group>";
+		};
+		CC34EDA92B1DD3A300450AB8 /* QrDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54742B21B9CD00FDC465 /* Contract */,
+				CCBE54732B21B9C900FDC465 /* View */,
+				CCBE54722B21B9C400FDC465 /* Presenter */,
+				CCBE54712B21B9BE00FDC465 /* Interactor */,
+				CCBE54702B21B9B900FDC465 /* Router */,
+			);
+			path = QrDisplay;
+			sourceTree = "<group>";
+		};
+		CC34EDAA2B1DD3B000450AB8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768C62B1EF3D40037D3B2 /* GenerateQrisInputFormRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CC34EDAB2B1DD3B700450AB8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768C92B1EF3DF0037D3B2 /* GenerateQrisInputFormInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CC34EDAC2B1DD3C000450AB8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768CB2B1EF3E90037D3B2 /* GenerateQrisInputFormPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CC34EDAD2B1DD3C500450AB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768CF2B1EF3FB0037D3B2 /* GenerateQrisInputFormViewController.swift */,
+				CCB768D12B1EF40A0037D3B2 /* GenerateQrisInputFormStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC34EDAE2B1DD3C900450AB8 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768CD2B1EF3F20037D3B2 /* GenerateQrisInputFormContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CC5963932B01D59600B1CB5E /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBFE3E2B04C58D007C7EE3 /* Main */,
+				CCCBFE3D2B04C586007C7EE3 /* CreatePin */,
+				CCCBFE3B2B04C545007C7EE3 /* DataBinding */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
+		CC5963982B01D5B300B1CB5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC5963A22B01D60200B1CB5E /* WebviewViewController.swift */,
+				CC5963A42B01D61700B1CB5E /* WebviewStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC5963992B01D5B800B1CB5E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CC59639A2B01D5E300B1CB5E /* WebviewContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CC93F5CC2AFB5E7300DE47F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC93F5C72AFB5E1C00DE47F0 /* ViewProtocolExtension.swift */,
+				CC93F5CA2AFB5E5100DE47F0 /* UIViewControllerExtension.swift */,
+				CCD31A2B2AFD16660019D1E0 /* UIActivityIndicatorExtension.swift */,
+				CCD31A562AFD22690019D1E0 /* UILabelExtension.swift */,
+				CCD31A582AFD22B60019D1E0 /* UIButtonExtension.swift */,
+				CCD31A5C2AFD27640019D1E0 /* StringExtension.swift */,
+				CCBBDDA22AFDD35400FEC3FC /* DictionaryExtension.swift */,
+				CCDCE1F52AFE3E5700F746FD /* UITextFieldExtension.swift */,
+				CCB768D52B1EF5F40037D3B2 /* UIViewExtension.swift */,
+				CCB768D72B1EF6DB0037D3B2 /* CALayerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC93F5D12AFB5EBA00DE47F0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCB7202AFA2CF800467B53 /* AppDelegate.swift */,
+				CCCCB7222AFA2CF800467B53 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CC93F5D42AFB6A1F00DE47F0 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768D92B1EF7280037D3B2 /* CustomDropDownTextField */,
+				CCDCE1EB2AFDEF8500F746FD /* CustomTextField */,
+				CCD31A442AFD1E860019D1E0 /* BottomPopUp */,
+				CCD31A2D2AFD170A0019D1E0 /* AppHelper.swift */,
+				CCD31A332AFD1DB10019D1E0 /* KeychainService.swift */,
+				CCDCE1F12AFE3A0800F746FD /* BaseViewController.swift */,
+				CCDCE1F32AFE3E2500F746FD /* Validator.swift */,
+				CCF5021A2B04D3D900A50E03 /* RedirectUrl.swift */,
+				CCB768D32B1EF5AA0037D3B2 /* DropDownTextField.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		CCA767C22B2C357100D44855 /* ScanQr */ = {
+			isa = PBXGroup;
+			children = (
+				CCA767CA2B2C35EA00D44855 /* Contract */,
+				CCA767C92B2C35E600D44855 /* View */,
+				CCA767C82B2C35E100D44855 /* Presenter */,
+				CCA767C72B2C35DB00D44855 /* Interactor */,
+				CCA767C62B2C35D000D44855 /* Router */,
+			);
+			path = ScanQr;
+			sourceTree = "<group>";
+		};
+		CCA767C42B2C357F00D44855 /* QrisInputAmount */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFEC2B2CB5310083612C /* Contract */,
+				CCAEEFEB2B2CB5280083612C /* View */,
+				CCAEEFE92B2CB51D0083612C /* Presenter */,
+				CCC1F53F2B2C83B100C28C2A /* Router */,
+			);
+			path = QrisInputAmount;
+			sourceTree = "<group>";
+		};
+		CCA767C52B2C35C300D44855 /* QrisAmountConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFF12B2CB5620083612C /* Contract */,
+				CCAEEFF02B2CB55E0083612C /* View */,
+				CCAEEFEF2B2CB5570083612C /* Presenter */,
+				CCAEEFEE2B2CB54E0083612C /* Interactor */,
+				CCAEEFED2B2CB5480083612C /* Router */,
+			);
+			path = QrisAmountConfirmation;
+			sourceTree = "<group>";
+		};
+		CCA767C62B2C35D000D44855 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F53D2B2C83AD00C28C2A /* ScanQrRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCA767C72B2C35DB00D44855 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F53B2B2C83A600C28C2A /* ScanQrInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCA767C82B2C35E100D44855 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F5392B2C839F00C28C2A /* ScanQrPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCA767C92B2C35E600D44855 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F5342B2C838000C28C2A /* ScanQrViewController.swift */,
+				CCC1F5372B2C839500C28C2A /* ScanQrStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCA767CA2B2C35EA00D44855 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F5312B2C837900C28C2A /* ScanQrContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCAEEFE92B2CB51D0083612C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFF42B2CB5F80083612C /* QrisInputAmountPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCAEEFEB2B2CB5280083612C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFF82B2CB6110083612C /* QrisInputAmountStoryboard.storyboard */,
+				CCAEEFF62B2CB6010083612C /* QrisInputAmountViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCAEEFEC2B2CB5310083612C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFFA2B2CB6200083612C /* QrisInputAmountContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCAEEFED2B2CB5480083612C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFFC2B2CB6290083612C /* QrisAmountConfirmationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCAEEFEE2B2CB54E0083612C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFFE2B2CB6330083612C /* QrisAmountConfirmationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCAEEFEF2B2CB5570083612C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEF0002B2CB63B0083612C /* QrisAmountConfirmationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCAEEFF02B2CB55E0083612C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEF0062B2CB6720083612C /* QrisAmountConfirmationStoryboard.storyboard */,
+				CCAEF0022B2CB64D0083612C /* QrisAmountConfirmationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCAEEFF12B2CB5620083612C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCACA9132B30A1B6007D7FD2 /* QrisAmountConfirmationContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCB768D92B1EF7280037D3B2 /* CustomDropDownTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CCB768DA2B1EF74E0037D3B2 /* CustomDropDownTextFieldView.swift */,
+				CCB768DC2B1EF7800037D3B2 /* CustomDropDownTextFieldView.xib */,
+			);
+			path = CustomDropDownTextField;
+			sourceTree = "<group>";
+		};
+		CCB963282AFB496800CD3EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCB9632F2AFB4AF400CD3EFE /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CCB963342AFB4B2900CD3EFE /* Contract */,
+				CCB963332AFB4B2300CD3EFE /* View */,
+				CCB963322AFB4B1B00CD3EFE /* Presenter */,
+				CCB963312AFB4B0600CD3EFE /* Interactor */,
+				CCB963302AFB4B0200CD3EFE /* Router */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CCB963302AFB4B0200CD3EFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCB963352AFB4B3300CD3EFE /* MenuRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCB963312AFB4B0600CD3EFE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCB963372AFB4B3C00CD3EFE /* MenuInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCB963322AFB4B1B00CD3EFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCB963392AFB4B4100CD3EFE /* MenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCB963332AFB4B2300CD3EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9633B2AFB4B4800CD3EFE /* MenuViewController.swift */,
+				CC93F5D22AFB5F5000DE47F0 /* MenuStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCB963342AFB4B2900CD3EFE /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9633D2AFB4B5100CD3EFE /* MenuContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCBBDD8E2AFDCAC200FEC3FC /* AccountCreation */ = {
+			isa = PBXGroup;
+			children = (
+				CCBBDD932AFDCAE900FEC3FC /* Contract */,
+				CCBBDD922AFDCAE400FEC3FC /* View */,
+				CCBBDD912AFDCADF00FEC3FC /* Presenter */,
+				CCBBDD902AFDCAD800FEC3FC /* Interactor */,
+				CCBBDD8F2AFDCAD400FEC3FC /* Router */,
+			);
+			path = AccountCreation;
+			sourceTree = "<group>";
+		};
+		CCBBDD8F2AFDCAD400FEC3FC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCBBDD9C2AFDCBAE00FEC3FC /* AccountCreationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCBBDD902AFDCAD800FEC3FC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCBBDD9A2AFDCBA600FEC3FC /* AccountCreationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCBBDD912AFDCADF00FEC3FC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCBBDD982AFDCB0500FEC3FC /* AccountCreationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCBBDD922AFDCAE400FEC3FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCBBDD962AFDCAFE00FEC3FC /* AccountCreationViewController.swift */,
+				CCBBDDA02AFDCD4200FEC3FC /* AccountCreationStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCBBDD932AFDCAE900FEC3FC /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCBBDD942AFDCAF400FEC3FC /* AccountCreationContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCBE54702B21B9B900FDC465 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54802B21BB0D00FDC465 /* QrDisplayRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCBE54712B21B9BE00FDC465 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE547E2B21BB0700FDC465 /* QrDisplayInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCBE54722B21B9C400FDC465 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE547C2B21BAFC00FDC465 /* QrDisplayPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCBE54732B21B9C900FDC465 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54782B21BAE800FDC465 /* QrDisplayViewController.swift */,
+				CCBE547A2B21BAF300FDC465 /* QrDisplayStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCBE54742B21B9CD00FDC465 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54762B21BADC00FDC465 /* QrDisplayContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCBE54822B21BDA900FDC465 /* ResultMessage */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54832B21BDA900FDC465 /* Contract */,
+				CCBE54852B21BDA900FDC465 /* Presenter */,
+				CCBE54872B21BDA900FDC465 /* View */,
+				CCBE548A2B21BDA900FDC465 /* Router */,
+			);
+			path = ResultMessage;
+			sourceTree = "<group>";
+		};
+		CCBE54832B21BDA900FDC465 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54842B21BDA900FDC465 /* ResultMessageContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCBE54852B21BDA900FDC465 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54862B21BDA900FDC465 /* ResultMessagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCBE54872B21BDA900FDC465 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54882B21BDA900FDC465 /* ResultMessageStoryboard.storyboard */,
+				CCBE54892B21BDA900FDC465 /* ResultMessageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCBE548A2B21BDA900FDC465 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE548B2B21BDA900FDC465 /* ResultMessageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCC1D7CA2AFEEBC500D31BF2 /* VerifyOtp */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D7D02AFEEBE500D31BF2 /* Contract */,
+				CCC1D7CF2AFEEBE000D31BF2 /* View */,
+				CCC1D7CE2AFEEBDC00D31BF2 /* Presenter */,
+				CCC1D7CD2AFEEBD600D31BF2 /* Interactor */,
+				CCC1D7CC2AFEEBD200D31BF2 /* Router */,
+			);
+			path = VerifyOtp;
+			sourceTree = "<group>";
+		};
+		CCC1D7CC2AFEEBD200D31BF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D7DB2AFEEC1F00D31BF2 /* VerifyOtpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCC1D7CD2AFEEBD600D31BF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D7D92AFEEC1900D31BF2 /* VerifyOtpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCC1D7CE2AFEEBDC00D31BF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D7D72AFEEC0E00D31BF2 /* VerifyOtpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCC1D7CF2AFEEBE000D31BF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D7D32AFEEBFA00D31BF2 /* VerifyOtpViewController.swift */,
+				CCC1D7DF2AFEED3A00D31BF2 /* VerifyOtpStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC1D7D02AFEEBE500D31BF2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D7D12AFEEBF100D31BF2 /* VerifyOtpContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCC1F5362B2C838500C28C2A /* QrisReceipt */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1F5432B2C83CF00C28C2A /* Contract */,
+				CCC1F5422B2C83C700C28C2A /* View */,
+				CCC1F5412B2C83C200C28C2A /* Presenter */,
+				CCC1F5402B2C83B700C28C2A /* Router */,
+			);
+			path = QrisReceipt;
+			sourceTree = "<group>";
+		};
+		CCC1F53F2B2C83B100C28C2A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEEFF22B2CB5F00083612C /* QrisInputAmountRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCC1F5402B2C83B700C28C2A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEF00A2B2CB6920083612C /* QrisReceiptRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCC1F5412B2C83C200C28C2A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEF00C2B2CB69A0083612C /* QrisReceiptPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCC1F5422B2C83C700C28C2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEF0102B2CB6B90083612C /* QrisReceiptStoryboard.storyboard */,
+				CCAEF00E2B2CB6AC0083612C /* QrisReceiptViewController.swift */,
+				CCB390CE2B31C76D00B6F8FF /* QrisReceiptTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC1F5432B2C83CF00C28C2A /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEF0122B2CB6C40083612C /* QrisReceiptContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCCBFE3B2B04C545007C7EE3 /* DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBFE4A2B04C660007C7EE3 /* Presenter */,
+				CCCBFE492B04C65B007C7EE3 /* Interactor */,
+				CCCBFE482B04C656007C7EE3 /* Router */,
+			);
+			path = DataBinding;
+			sourceTree = "<group>";
+		};
+		CCCBFE3D2B04C586007C7EE3 /* CreatePin */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBFE412B04C62B007C7EE3 /* Presenter */,
+				CCCBFE402B04C624007C7EE3 /* Interactor */,
+				CCCBFE3F2B04C59D007C7EE3 /* Router */,
+			);
+			path = CreatePin;
+			sourceTree = "<group>";
+		};
+		CCCBFE3E2B04C58D007C7EE3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC5963992B01D5B800B1CB5E /* Contract */,
+				CC5963982B01D5B300B1CB5E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CCCBFE3F2B04C59D007C7EE3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBFE422B04C636007C7EE3 /* CreatePinWebviewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCCBFE402B04C624007C7EE3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBFE442B04C641007C7EE3 /* CreatePinWebviewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCCBFE412B04C62B007C7EE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBFE462B04C653007C7EE3 /* CreatePinWebviewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCCBFE482B04C656007C7EE3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCF502202B04D6DF00A50E03 /* DataBindingWebviewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCCBFE492B04C65B007C7EE3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCF5021E2B04D6D300A50E03 /* DataBindingWebviewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CCCBFE4A2B04C660007C7EE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCF5021C2B04D6C900A50E03 /* DataBindingWebviewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCCCB7142AFA2CF700467B53 = {
+			isa = PBXGroup;
+			children = (
+				CCCCB71F2AFA2CF800467B53 /* DokuWalletFrameworkDemo */,
+				CCCCB71E2AFA2CF800467B53 /* Products */,
+				CCB963282AFB496800CD3EFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCCCB71E2AFA2CF800467B53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCB71D2AFA2CF800467B53 /* DokuWalletFrameworkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCCCB71F2AFA2CF800467B53 /* DokuWalletFrameworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A532AFD1EFC0019D1E0 /* Structs */,
+				CC93F5D42AFB6A1F00DE47F0 /* Commons */,
+				CC93F5D12AFB5EBA00DE47F0 /* Delegates */,
+				CC93F5CC2AFB5E7300DE47F0 /* Extensions */,
+				CC0F7E932AFB5C34007FAA88 /* Protocols */,
+				CC0F7E8F2AFB5BF1007FAA88 /* Enums */,
+				CCCCB7342AFA2E0F00467B53 /* Modules */,
+				CCCCB7292AFA2CFA00467B53 /* Assets.xcassets */,
+				CCCCB72B2AFA2CFA00467B53 /* LaunchScreen.storyboard */,
+				CCCCB72E2AFA2CFA00467B53 /* Info.plist */,
+				CCD31A5A2AFD26E90019D1E0 /* Credential.swift */,
+			);
+			path = DokuWalletFrameworkDemo;
+			sourceTree = "<group>";
+		};
+		CCCCB7342AFA2E0F00467B53 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE54822B21BDA900FDC465 /* ResultMessage */,
+				CCB9632F2AFB4AF400CD3EFE /* Menu */,
+				CC34EDA52B1DD00600450AB8 /* GenerateQris */,
+				CC34EDA72B1DD20A00450AB8 /* PaymentQris */,
+				CCD31A352AFD1E070019D1E0 /* BottomPopUpMessage */,
+				CCBBDD8E2AFDCAC200FEC3FC /* AccountCreation */,
+				CCC1D7CA2AFEEBC500D31BF2 /* VerifyOtp */,
+				CC5963932B01D59600B1CB5E /* Webview */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CCD31A352AFD1E070019D1E0 /* BottomPopUpMessage */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A362AFD1E070019D1E0 /* Contract */,
+				CCD31A382AFD1E070019D1E0 /* Presenter */,
+				CCD31A3A2AFD1E070019D1E0 /* View */,
+				CCD31A3D2AFD1E070019D1E0 /* Router */,
+			);
+			path = BottomPopUpMessage;
+			sourceTree = "<group>";
+		};
+		CCD31A362AFD1E070019D1E0 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A372AFD1E070019D1E0 /* BottomPopUpMessageContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		CCD31A382AFD1E070019D1E0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A392AFD1E070019D1E0 /* BottomPopUpMessagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCD31A3A2AFD1E070019D1E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A3B2AFD1E070019D1E0 /* BottomPopUpMessageStoryboard.storyboard */,
+				CCD31A3C2AFD1E070019D1E0 /* BottomPopUpMessageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCD31A3D2AFD1E070019D1E0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A3E2AFD1E070019D1E0 /* BottomPopUpMessageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CCD31A442AFD1E860019D1E0 /* BottomPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A452AFD1E860019D1E0 /* BottomPopupDismissInteractionControllerDelegate.swift */,
+				CCD31A462AFD1E860019D1E0 /* BottomPopupUtils.swift */,
+				CCD31A472AFD1E860019D1E0 /* BottomPopupViewController.swift */,
+				CCD31A482AFD1E860019D1E0 /* BottomPopupDismissAnimator.swift */,
+				CCD31A492AFD1E860019D1E0 /* BottomPopupPresentAnimator.swift */,
+				CCD31A4A2AFD1E860019D1E0 /* BottomPopupTransitionHandler.swift */,
+				CCD31A4B2AFD1E860019D1E0 /* BottomPopupPresentationController.swift */,
+			);
+			path = BottomPopUp;
+			sourceTree = "<group>";
+		};
+		CCD31A532AFD1EFC0019D1E0 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				CCD31A542AFD1F0B0019D1E0 /* BottomPopUpDataStruct.swift */,
+				CC5963A62B0222BA00B1CB5E /* WebviewConfig.swift */,
+				CC5963AC2B022AA800B1CB5E /* VerifyOtpStruct.swift */,
+				CCCE4CD12B068C190002BF54 /* AccountCreationStruct.swift */,
+				CCB768DE2B1EF9950037D3B2 /* GenerateQrisInputFormStruct.swift */,
+				CCBE54912B21BDC900FDC465 /* ResultMessageDataStruct.swift */,
+				CCB390CB2B31ADF900B6F8FF /* PaymentQrisReceiptDataStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		CCDCE1EB2AFDEF8500F746FD /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CCDCE1ED2AFDEF9B00F746FD /* CustomTextFieldView.swift */,
+				CCDCE1EF2AFDEFAE00F746FD /* CustomTextFieldView.xib */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCCCB71C2AFA2CF800467B53 /* DokuWalletFrameworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCCB7312AFA2CFA00467B53 /* Build configuration list for PBXNativeTarget "DokuWalletFrameworkDemo" */;
+			buildPhases = (
+				CCCCB7192AFA2CF800467B53 /* Sources */,
+				CCCCB71A2AFA2CF800467B53 /* Frameworks */,
+				CCCCB71B2AFA2CF800467B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DokuWalletFrameworkDemo;
+			packageProductDependencies = (
+				CC3B91ED2B836AFC008AC4C1 /* DokuWalletSDK */,
+			);
+			productName = DokuWalletFrameworkDemo;
+			productReference = CCCCB71D2AFA2CF800467B53 /* DokuWalletFrameworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCCCB7152AFA2CF700467B53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CCCCB71C2AFA2CF800467B53 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = CCCCB7182AFA2CF700467B53 /* Build configuration list for PBXProject "DokuWalletFrameworkDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCCCB7142AFA2CF700467B53;
+			packageReferences = (
+				CC3B91EC2B836AFC008AC4C1 /* XCRemoteSwiftPackageReference "doku-wallet-ios-sdk" */,
+			);
+			productRefGroup = CCCCB71E2AFA2CF800467B53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCCCB71C2AFA2CF800467B53 /* DokuWalletFrameworkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCCCB71B2AFA2CF800467B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC1D7E02AFEED3A00D31BF2 /* VerifyOtpStoryboard.storyboard in Resources */,
+				CCCCB72D2AFA2CFA00467B53 /* LaunchScreen.storyboard in Resources */,
+				CCBBDDA12AFDCD4200FEC3FC /* AccountCreationStoryboard.storyboard in Resources */,
+				CCDCE1F02AFDEFAE00F746FD /* CustomTextFieldView.xib in Resources */,
+				CCB768DD2B1EF7800037D3B2 /* CustomDropDownTextFieldView.xib in Resources */,
+				CCC1F5382B2C839500C28C2A /* ScanQrStoryboard.storyboard in Resources */,
+				CCAEF0112B2CB6B90083612C /* QrisReceiptStoryboard.storyboard in Resources */,
+				CCD31A412AFD1E070019D1E0 /* BottomPopUpMessageStoryboard.storyboard in Resources */,
+				CCAEF0072B2CB6720083612C /* QrisAmountConfirmationStoryboard.storyboard in Resources */,
+				CCBE548E2B21BDA900FDC465 /* ResultMessageStoryboard.storyboard in Resources */,
+				CC5963A52B01D61700B1CB5E /* WebviewStoryboard.storyboard in Resources */,
+				CCAEEFF92B2CB6110083612C /* QrisInputAmountStoryboard.storyboard in Resources */,
+				CCCCB72A2AFA2CFA00467B53 /* Assets.xcassets in Resources */,
+				CCB768D22B1EF40A0037D3B2 /* GenerateQrisInputFormStoryboard.storyboard in Resources */,
+				CCBE547B2B21BAF300FDC465 /* QrDisplayStoryboard.storyboard in Resources */,
+				CC93F5D32AFB5F5000DE47F0 /* MenuStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCCCB7192AFA2CF800467B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB768D42B1EF5AA0037D3B2 /* DropDownTextField.swift in Sources */,
+				CCB9633E2AFB4B5100CD3EFE /* MenuContract.swift in Sources */,
+				CCB768D02B1EF3FB0037D3B2 /* GenerateQrisInputFormViewController.swift in Sources */,
+				CCB768CA2B1EF3DF0037D3B2 /* GenerateQrisInputFormInteractor.swift in Sources */,
+				CCAEF0032B2CB64D0083612C /* QrisAmountConfirmationViewController.swift in Sources */,
+				CC0F7E952AFB5C43007FAA88 /* StoryboardViewControllerProtocol.swift in Sources */,
+				CCAEEFF72B2CB6010083612C /* QrisInputAmountViewController.swift in Sources */,
+				CCC1F5322B2C837900C28C2A /* ScanQrContract.swift in Sources */,
+				CCC1D7D22AFEEBF100D31BF2 /* VerifyOtpContract.swift in Sources */,
+				CCB768D62B1EF5F40037D3B2 /* UIViewExtension.swift in Sources */,
+				CCC1F53C2B2C83A600C28C2A /* ScanQrInteractor.swift in Sources */,
+				CCAEEFFF2B2CB6330083612C /* QrisAmountConfirmationInteractor.swift in Sources */,
+				CC2A00852B30BD1100F076B1 /* QrisFeeTypeDescription.swift in Sources */,
+				CCC1F5352B2C838000C28C2A /* ScanQrViewController.swift in Sources */,
+				CCC1F53E2B2C83AD00C28C2A /* ScanQrRouter.swift in Sources */,
+				CCBE548D2B21BDA900FDC465 /* ResultMessagePresenter.swift in Sources */,
+				CCB963382AFB4B3C00CD3EFE /* MenuInteractor.swift in Sources */,
+				CC93F5D82AFB6A5C00DE47F0 /* SystemColor.swift in Sources */,
+				CC93F5D02AFB5E8800DE47F0 /* ViewProtocol.swift in Sources */,
+				CCB963362AFB4B3300CD3EFE /* MenuRouter.swift in Sources */,
+				CCD31A592AFD22B60019D1E0 /* UIButtonExtension.swift in Sources */,
+				CCAEF00B2B2CB6920083612C /* QrisReceiptRouter.swift in Sources */,
+				CCACA9142B30A1B6007D7FD2 /* QrisAmountConfirmationContract.swift in Sources */,
+				CCBE54922B21BDC900FDC465 /* ResultMessageDataStruct.swift in Sources */,
+				CCF502212B04D6DF00A50E03 /* DataBindingWebviewRouter.swift in Sources */,
+				CCD31A322AFD1D3F0019D1E0 /* KeychainKey.swift in Sources */,
+				CCAEF00D2B2CB69A0083612C /* QrisReceiptPresenter.swift in Sources */,
+				CCBBDD952AFDCAF400FEC3FC /* AccountCreationContract.swift in Sources */,
+				CCCBFE432B04C636007C7EE3 /* CreatePinWebviewRouter.swift in Sources */,
+				CCBBDD992AFDCB0500FEC3FC /* AccountCreationPresenter.swift in Sources */,
+				CCD31A432AFD1E070019D1E0 /* BottomPopUpMessageRouter.swift in Sources */,
+				CCAEF0012B2CB63B0083612C /* QrisAmountConfirmationPresenter.swift in Sources */,
+				CCF5021B2B04D3D900A50E03 /* RedirectUrl.swift in Sources */,
+				CCDCE1EE2AFDEF9B00F746FD /* CustomTextFieldView.swift in Sources */,
+				CCBE547D2B21BAFC00FDC465 /* QrDisplayPresenter.swift in Sources */,
+				CCB390CF2B31C76D00B6F8FF /* QrisReceiptTableViewCell.swift in Sources */,
+				CCD31A2E2AFD170A0019D1E0 /* AppHelper.swift in Sources */,
+				CCF5021D2B04D6C900A50E03 /* DataBindingWebviewPresenter.swift in Sources */,
+				CCBE548F2B21BDA900FDC465 /* ResultMessageViewController.swift in Sources */,
+				CCAEEFF52B2CB5F80083612C /* QrisInputAmountPresenter.swift in Sources */,
+				CCDCE1F22AFE3A0800F746FD /* BaseViewController.swift in Sources */,
+				CCC1D7D42AFEEBFA00D31BF2 /* VerifyOtpViewController.swift in Sources */,
+				CCD31A302AFD18EC0019D1E0 /* UserDefaultKey.swift in Sources */,
+				CCAEEFFD2B2CB6290083612C /* QrisAmountConfirmationRouter.swift in Sources */,
+				CCD31A402AFD1E070019D1E0 /* BottomPopUpMessagePresenter.swift in Sources */,
+				CCD31A522AFD1E860019D1E0 /* BottomPopupPresentationController.swift in Sources */,
+				CCBBDD9B2AFDCBA600FEC3FC /* AccountCreationInteractor.swift in Sources */,
+				CCB768DB2B1EF74E0037D3B2 /* CustomDropDownTextFieldView.swift in Sources */,
+				CC0F7E922AFB5C09007FAA88 /* ViewId.swift in Sources */,
+				CCB390CC2B31ADF900B6F8FF /* PaymentQrisReceiptDataStruct.swift in Sources */,
+				CCBBDD972AFDCAFE00FEC3FC /* AccountCreationViewController.swift in Sources */,
+				CCCE4CD22B068C190002BF54 /* AccountCreationStruct.swift in Sources */,
+				CC5963A92B02231400B1CB5E /* BackType.swift in Sources */,
+				CCB768CC2B1EF3E90037D3B2 /* GenerateQrisInputFormPresenter.swift in Sources */,
+				CCBE54792B21BAE800FDC465 /* QrDisplayViewController.swift in Sources */,
+				CCBBDD9D2AFDCBAE00FEC3FC /* AccountCreationRouter.swift in Sources */,
+				CC93F5C82AFB5E1C00DE47F0 /* ViewProtocolExtension.swift in Sources */,
+				CCBE548C2B21BDA900FDC465 /* ResultMessageContract.swift in Sources */,
+				CCBBDD882AFDB57500FEC3FC /* WalletFeature.swift in Sources */,
+				CCD31A502AFD1E860019D1E0 /* BottomPopupPresentAnimator.swift in Sources */,
+				CCC1D7DA2AFEEC1900D31BF2 /* VerifyOtpInteractor.swift in Sources */,
+				CCBE54772B21BADC00FDC465 /* QrDisplayContract.swift in Sources */,
+				CCD31A5B2AFD26E90019D1E0 /* Credential.swift in Sources */,
+				CC5963A32B01D60200B1CB5E /* WebviewViewController.swift in Sources */,
+				CCC1F53A2B2C839F00C28C2A /* ScanQrPresenter.swift in Sources */,
+				CCAEF0132B2CB6C40083612C /* QrisReceiptContract.swift in Sources */,
+				CCC1D7DC2AFEEC1F00D31BF2 /* VerifyOtpRouter.swift in Sources */,
+				CCD31A4F2AFD1E860019D1E0 /* BottomPopupDismissAnimator.swift in Sources */,
+				CCF5021F2B04D6D300A50E03 /* DataBindingWebviewInteractor.swift in Sources */,
+				CCD31A4E2AFD1E860019D1E0 /* BottomPopupViewController.swift in Sources */,
+				CC5963AB2B0224B900B1CB5E /* WebHttpMethod.swift in Sources */,
+				CCB9633C2AFB4B4800CD3EFE /* MenuViewController.swift in Sources */,
+				CC5963AD2B022AA800B1CB5E /* VerifyOtpStruct.swift in Sources */,
+				CCB768DF2B1EF9950037D3B2 /* GenerateQrisInputFormStruct.swift in Sources */,
+				CCD31A342AFD1DB10019D1E0 /* KeychainService.swift in Sources */,
+				CCB768D82B1EF6DB0037D3B2 /* CALayerExtension.swift in Sources */,
+				CCBE54812B21BB0D00FDC465 /* QrDisplayRouter.swift in Sources */,
+				CCD31A512AFD1E860019D1E0 /* BottomPopupTransitionHandler.swift in Sources */,
+				CC93F5CE2AFB5E8100DE47F0 /* RouterProtocol.swift in Sources */,
+				CCBE546C2B2196BB00FDC465 /* AmountType.swift in Sources */,
+				CC93F5CB2AFB5E5100DE47F0 /* UIViewControllerExtension.swift in Sources */,
+				CCD31A3F2AFD1E070019D1E0 /* BottomPopUpMessageContract.swift in Sources */,
+				CCB768CE2B1EF3F20037D3B2 /* GenerateQrisInputFormContract.swift in Sources */,
+				CCD31A4D2AFD1E860019D1E0 /* BottomPopupUtils.swift in Sources */,
+				CCAEEFF32B2CB5F00083612C /* QrisInputAmountRouter.swift in Sources */,
+				CCBE547F2B21BB0700FDC465 /* QrDisplayInteractor.swift in Sources */,
+				CCD31A4C2AFD1E860019D1E0 /* BottomPopupDismissInteractionControllerDelegate.swift in Sources */,
+				CCDCE1F62AFE3E5700F746FD /* UITextFieldExtension.swift in Sources */,
+				CCAEF00F2B2CB6AC0083612C /* QrisReceiptViewController.swift in Sources */,
+				CC5963A72B0222BA00B1CB5E /* WebviewConfig.swift in Sources */,
+				CCCBFE452B04C641007C7EE3 /* CreatePinWebviewInteractor.swift in Sources */,
+				CCBBDDA32AFDD35400FEC3FC /* DictionaryExtension.swift in Sources */,
+				CCD31A2C2AFD16660019D1E0 /* UIActivityIndicatorExtension.swift in Sources */,
+				CCDCE1F42AFE3E2500F746FD /* Validator.swift in Sources */,
+				CCBE54902B21BDA900FDC465 /* ResultMessageRouter.swift in Sources */,
+				CCCCB7212AFA2CF800467B53 /* AppDelegate.swift in Sources */,
+				CCCCB7232AFA2CF800467B53 /* SceneDelegate.swift in Sources */,
+				CCD31A422AFD1E070019D1E0 /* BottomPopUpMessageViewController.swift in Sources */,
+				CCC1D7D82AFEEC0E00D31BF2 /* VerifyOtpPresenter.swift in Sources */,
+				CCD31A5D2AFD27640019D1E0 /* StringExtension.swift in Sources */,
+				CCD31A552AFD1F0B0019D1E0 /* BottomPopUpDataStruct.swift in Sources */,
+				CCAEEFFB2B2CB6200083612C /* QrisInputAmountContract.swift in Sources */,
+				CCB768C72B1EF3D40037D3B2 /* GenerateQrisInputFormRouter.swift in Sources */,
+				CCD31A572AFD22690019D1E0 /* UILabelExtension.swift in Sources */,
+				CCB9633A2AFB4B4100CD3EFE /* MenuPresenter.swift in Sources */,
+				CC59639B2B01D5E300B1CB5E /* WebviewContract.swift in Sources */,
+				CCCBFE472B04C653007C7EE3 /* CreatePinWebviewPresenter.swift in Sources */,
+				CCBE546F2B21B6E000FDC465 /* QrisFeeType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCCCB72B2AFA2CFA00467B53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCCCB72C2AFA2CFA00467B53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCCCB72F2AFA2CFA00467B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCCCB7302AFA2CFA00467B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCCCB7322AFA2CFA00467B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DokuWalletFrameworkDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "By allowing camera access, you will be able to scan qr code for your demo app";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.DokuWalletFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCCCB7332AFA2CFA00467B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DokuWalletFrameworkDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "By allowing camera access, you will be able to scan qr code for your demo app";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.DokuWalletFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCCCB7182AFA2CF700467B53 /* Build configuration list for PBXProject "DokuWalletFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCCB72F2AFA2CFA00467B53 /* Debug */,
+				CCCCB7302AFA2CFA00467B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCCB7312AFA2CFA00467B53 /* Build configuration list for PBXNativeTarget "DokuWalletFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCCB7322AFA2CFA00467B53 /* Debug */,
+				CCCCB7332AFA2CFA00467B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC3B91EC2B836AFC008AC4C1 /* XCRemoteSwiftPackageReference "doku-wallet-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PTNUSASATUINTIARTHA-DOKU/doku-wallet-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC3B91ED2B836AFC008AC4C1 /* DokuWalletSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC3B91EC2B836AFC008AC4C1 /* XCRemoteSwiftPackageReference "doku-wallet-ios-sdk" */;
+			productName = DokuWalletSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CCCCB7152AFA2CF700467B53 /* Project object */;
+}

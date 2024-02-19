@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan Qr View Controller-->
+        <scene sceneID="lD7-XU-QGL">
+            <objects>
+                <viewController storyboardIdentifier="ScanQrViewController" id="7Po-Qx-3uU" customClass="ScanQrViewController" customModule="DokuWalletFrameworkDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8CA-HM-QVI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5f-hH-qEv" userLabel="Camera View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QO-oi-dMQ" userLabel="Qris Logo View">
+                                <rect key="frame" x="0.0" y="738" width="393" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qris-scan" translatesAutoresizingMaskIntoConstraints="NO" id="xQb-en-oxn">
+                                        <rect key="frame" x="146.66666666666666" y="27" width="100" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="U0n-O4-n1k"/>
+                                            <constraint firstAttribute="height" constant="28" id="iml-sS-VoJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xQb-en-oxn" firstAttribute="centerX" secondItem="1QO-oi-dMQ" secondAttribute="centerX" id="avL-aX-rPA"/>
+                                    <constraint firstItem="xQb-en-oxn" firstAttribute="top" secondItem="1QO-oi-dMQ" secondAttribute="top" constant="27" id="xYR-Ew-Po6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WvI-xD-jPl"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1QO-oi-dMQ" firstAttribute="top" secondItem="WvI-xD-jPl" secondAttribute="bottom" constant="-80" id="2mg-zA-ZWQ"/>
+                            <constraint firstItem="x5f-hH-qEv" firstAttribute="trailing" secondItem="WvI-xD-jPl" secondAttribute="trailing" id="5cE-ew-S9K"/>
+                            <constraint firstItem="1QO-oi-dMQ" firstAttribute="leading" secondItem="WvI-xD-jPl" secondAttribute="leading" id="HlF-W1-VBB"/>
+                            <constraint firstAttribute="bottom" secondItem="x5f-hH-qEv" secondAttribute="bottom" id="I0g-zO-ugh"/>
+                            <constraint firstAttribute="bottom" secondItem="1QO-oi-dMQ" secondAttribute="bottom" id="adH-nO-Xw3"/>
+                            <constraint firstItem="x5f-hH-qEv" firstAttribute="leading" secondItem="WvI-xD-jPl" secondAttribute="leading" id="bKd-6F-nwp"/>
+                            <constraint firstItem="WvI-xD-jPl" firstAttribute="trailing" secondItem="1QO-oi-dMQ" secondAttribute="trailing" id="nPZ-kK-UWV"/>
+                            <constraint firstItem="x5f-hH-qEv" firstAttribute="top" secondItem="8CA-HM-QVI" secondAttribute="top" id="r3H-QI-wgP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="x5f-hH-qEv" id="cpl-VG-XXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaY-ap-Oen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="154.22535211267606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qris-scan" width="100.33333587646484" height="26.666666030883789"/>
+    </resources>
+</document>

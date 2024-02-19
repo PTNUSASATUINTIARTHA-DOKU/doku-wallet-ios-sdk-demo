@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Webview View Controller-->
+        <scene sceneID="hag-x0-4SW">
+            <objects>
+                <viewController storyboardIdentifier="WebviewViewController" automaticallyAdjustsScrollViewInsets="NO" id="aWk-ne-ddy" customClass="WebviewViewController" customModule="DokuWalletFrameworkDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aeT-fZ-0dS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBi-V9-Kmb">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WVZ-lw-9GW">
+                                <rect key="frame" x="176.66666666666666" y="418.66666666666669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="22f-Sh-MV2"/>
+                                    <constraint firstAttribute="width" constant="40" id="siH-qL-EIC"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sgi-ov-P8i"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sgi-ov-P8i" firstAttribute="bottom" secondItem="eBi-V9-Kmb" secondAttribute="bottom" id="DXn-77-d5u"/>
+                            <constraint firstItem="eBi-V9-Kmb" firstAttribute="leading" secondItem="sgi-ov-P8i" secondAttribute="leading" id="GZj-1a-nh3"/>
+                            <constraint firstItem="WVZ-lw-9GW" firstAttribute="centerX" secondItem="sgi-ov-P8i" secondAttribute="centerX" id="axO-pR-lby"/>
+                            <constraint firstItem="eBi-V9-Kmb" firstAttribute="top" secondItem="sgi-ov-P8i" secondAttribute="top" id="h9b-gc-NKd"/>
+                            <constraint firstItem="sgi-ov-P8i" firstAttribute="trailing" secondItem="eBi-V9-Kmb" secondAttribute="trailing" id="kj3-Jj-CcG"/>
+                            <constraint firstItem="WVZ-lw-9GW" firstAttribute="centerY" secondItem="sgi-ov-P8i" secondAttribute="centerY" id="xbv-BR-AOf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadSpinner" destination="WVZ-lw-9GW" id="lMK-ya-6sc"/>
+                        <outlet property="webview" destination="eBi-V9-Kmb" id="gkR-3Z-rTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tpo-TJ-Ozt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="143"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDropDownTextFieldView" customModule="DokuWalletFrameworkDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="mistakeLabel" destination="FsX-bF-Ynb" id="rQc-RW-AEH"/>
+                <outlet property="textField" destination="iPE-M3-1BO" id="H87-vf-Xqi"/>
+                <outlet property="titleLabel" destination="z2v-bE-L2R" id="Ody-QC-IRc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IOX-fA-txZ">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2v-bE-L2R">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" name="2C333C"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-M3-1BO" customClass="DropDown" customModule="DokuWalletFrameworkDemo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="7" width="393" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="z53-Jy-Sml"/>
+                    </constraints>
+                    <color key="textColor" name="2C333C"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlq-Se-12L">
+                    <rect key="frame" x="0.0" y="45" width="393" height="1"/>
+                    <color key="backgroundColor" name="F2F4F7"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="95H-dV-tAS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsX-bF-Ynb">
+                    <rect key="frame" x="0.0" y="52" width="393" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="BB1F17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="BMm-tS-Xc7"/>
+            <constraints>
+                <constraint firstItem="iPE-M3-1BO" firstAttribute="top" secondItem="z2v-bE-L2R" secondAttribute="bottom" constant="7" id="10f-bE-xON"/>
+                <constraint firstItem="FsX-bF-Ynb" firstAttribute="top" secondItem="iPE-M3-1BO" secondAttribute="bottom" constant="5" id="8ny-kj-xH2"/>
+                <constraint firstItem="BMm-tS-Xc7" firstAttribute="trailing" secondItem="FsX-bF-Ynb" secondAttribute="trailing" id="GLm-ce-mm5"/>
+                <constraint firstAttribute="trailing" secondItem="Xlq-Se-12L" secondAttribute="trailing" id="HCu-GX-4OP"/>
+                <constraint firstItem="z2v-bE-L2R" firstAttribute="top" secondItem="IOX-fA-txZ" secondAttribute="top" id="Ihe-ye-aOC"/>
+                <constraint firstItem="z2v-bE-L2R" firstAttribute="leading" secondItem="IOX-fA-txZ" secondAttribute="leading" id="QvF-Ac-Gcp"/>
+                <constraint firstItem="Xlq-Se-12L" firstAttribute="leading" secondItem="IOX-fA-txZ" secondAttribute="leading" id="UTa-Gf-D0k"/>
+                <constraint firstItem="Xlq-Se-12L" firstAttribute="bottom" secondItem="iPE-M3-1BO" secondAttribute="bottom" constant="-1" id="V9p-n2-xpf"/>
+                <constraint firstItem="BMm-tS-Xc7" firstAttribute="trailing" secondItem="iPE-M3-1BO" secondAttribute="trailing" id="ZP2-yu-fxy"/>
+                <constraint firstItem="iPE-M3-1BO" firstAttribute="leading" secondItem="BMm-tS-Xc7" secondAttribute="leading" id="gEb-Y4-Czl"/>
+                <constraint firstAttribute="trailing" secondItem="z2v-bE-L2R" secondAttribute="trailing" id="gTp-9c-ixz"/>
+                <constraint firstItem="FsX-bF-Ynb" firstAttribute="leading" secondItem="BMm-tS-Xc7" secondAttribute="leading" id="oEm-pb-88C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="iPE-M3-1BO">
+            <size key="intrinsicContentSize" width="5" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="2C333C">
+            <color red="0.17254901960784313" green="0.20000000000000001" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BB1F17">
+            <color red="0.73333333333333328" green="0.12156862745098039" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="F2F4F7">
+            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

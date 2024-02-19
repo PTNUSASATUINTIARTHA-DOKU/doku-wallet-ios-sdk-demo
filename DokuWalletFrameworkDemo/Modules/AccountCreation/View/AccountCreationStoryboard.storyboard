@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Account Creation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AccountCreationViewController" id="Y6W-OH-hqX" customClass="AccountCreationViewController" customModule="DokuWalletFrameworkDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFO-jK-LfR">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Bz-CM-IzB" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Akun DOKU e-Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LD-xr-C63">
+                                                <rect key="frame" x="16" y="24" width="288" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="2C333C"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buat akun DOKU e-Wallet kamu untuk melanjutkan transaksi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHK-OM-sTe">
+                                                <rect key="frame" x="16" y="55.5" width="288" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="69707A"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lI1-Xn-cQV" customClass="CustomTextFieldView" customModule="DokuWalletFrameworkDemo" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="113" width="288" height="84"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="QOO-ke-SkH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze7-6Z-yx0" customClass="CustomTextFieldView" customModule="DokuWalletFrameworkDemo" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="205" width="288" height="84"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="N4I-LA-mYR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvT-qL-0Ub" customClass="CustomTextFieldView" customModule="DokuWalletFrameworkDemo" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="297" width="288" height="84"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="309-3J-IlF"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-ZE-IuI">
+                                                <rect key="frame" x="16" y="492" width="288" height="40"/>
+                                                <color key="backgroundColor" name="E5E8EC"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9ON-3c-wRG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Lanjut">
+                                                    <color key="titleColor" name="818995"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6Qr-td-YpY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3LD-xr-C63" firstAttribute="leading" secondItem="3Bz-CM-IzB" secondAttribute="leading" constant="16" id="0a0-vZ-Xg9"/>
+                                            <constraint firstAttribute="bottom" secondItem="NGN-ZE-IuI" secondAttribute="bottom" constant="16" id="25F-Nh-L07"/>
+                                            <constraint firstAttribute="trailing" secondItem="lI1-Xn-cQV" secondAttribute="trailing" constant="16" id="4f0-xh-a7H"/>
+                                            <constraint firstItem="kvT-qL-0Ub" firstAttribute="leading" secondItem="3Bz-CM-IzB" secondAttribute="leading" constant="16" id="5eP-0G-oEa"/>
+                                            <constraint firstAttribute="trailing" secondItem="NGN-ZE-IuI" secondAttribute="trailing" constant="16" id="7om-0D-cTK"/>
+                                            <constraint firstItem="Ze7-6Z-yx0" firstAttribute="leading" secondItem="3Bz-CM-IzB" secondAttribute="leading" constant="16" id="Aau-2a-DUc"/>
+                                            <constraint firstAttribute="trailing" secondItem="JHK-OM-sTe" secondAttribute="trailing" constant="16" id="Cpu-vd-Lxj"/>
+                                            <constraint firstAttribute="trailing" secondItem="3LD-xr-C63" secondAttribute="trailing" constant="16" id="DDv-xe-9ga"/>
+                                            <constraint firstItem="kvT-qL-0Ub" firstAttribute="top" secondItem="Ze7-6Z-yx0" secondAttribute="bottom" constant="8" id="Ec9-oW-lp7"/>
+                                            <constraint firstItem="JHK-OM-sTe" firstAttribute="leading" secondItem="3Bz-CM-IzB" secondAttribute="leading" constant="16" id="KlJ-P9-qJA"/>
+                                            <constraint firstItem="3LD-xr-C63" firstAttribute="top" secondItem="3Bz-CM-IzB" secondAttribute="top" constant="24" id="Mhq-Wl-eQH"/>
+                                            <constraint firstAttribute="trailing" secondItem="kvT-qL-0Ub" secondAttribute="trailing" constant="16" id="R8G-6u-9Qx"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ze7-6Z-yx0" secondAttribute="trailing" constant="16" id="Ypu-HH-lnx"/>
+                                            <constraint firstItem="lI1-Xn-cQV" firstAttribute="leading" secondItem="3Bz-CM-IzB" secondAttribute="leading" constant="16" id="fKI-Cb-dk8"/>
+                                            <constraint firstItem="NGN-ZE-IuI" firstAttribute="leading" secondItem="3Bz-CM-IzB" secondAttribute="leading" constant="16" id="oAe-fn-4nw"/>
+                                            <constraint firstItem="lI1-Xn-cQV" firstAttribute="top" secondItem="JHK-OM-sTe" secondAttribute="bottom" constant="24" id="tKM-hg-aGO"/>
+                                            <constraint firstItem="Ze7-6Z-yx0" firstAttribute="top" secondItem="lI1-Xn-cQV" secondAttribute="bottom" constant="8" id="vdM-hr-Vhd"/>
+                                            <constraint firstItem="JHK-OM-sTe" firstAttribute="top" secondItem="3LD-xr-C63" secondAttribute="bottom" constant="12" id="yYp-HO-vBX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Bz-CM-IzB" firstAttribute="width" secondItem="tFO-jK-LfR" secondAttribute="width" id="AAj-6Y-LFD"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Bz-CM-IzB" secondAttribute="bottom" id="BG5-aF-MjH"/>
+                                    <constraint firstItem="3Bz-CM-IzB" firstAttribute="height" secondItem="tFO-jK-LfR" secondAttribute="height" id="Ban-zV-qPP"/>
+                                    <constraint firstItem="3Bz-CM-IzB" firstAttribute="leading" secondItem="tFO-jK-LfR" secondAttribute="leading" id="F8m-Ep-hEJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Bz-CM-IzB" secondAttribute="trailing" id="I16-6v-blJ"/>
+                                    <constraint firstItem="3Bz-CM-IzB" firstAttribute="top" secondItem="tFO-jK-LfR" secondAttribute="top" id="Un8-fX-ers"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tFO-jK-LfR" secondAttribute="trailing" id="6Lg-80-IVs"/>
+                            <constraint firstItem="tFO-jK-LfR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9W5-De-hiz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tFO-jK-LfR" secondAttribute="bottom" id="GEA-pC-RRa"/>
+                            <constraint firstItem="tFO-jK-LfR" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="aXY-rg-9OJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="JHK-OM-sTe" id="29Y-AC-uFS"/>
+                        <outlet property="emailTextFieldView" destination="Ze7-6Z-yx0" id="AUt-IR-qzs"/>
+                        <outlet property="nameTextFieldView" destination="lI1-Xn-cQV" id="lgg-sa-Dus"/>
+                        <outlet property="nextButton" destination="NGN-ZE-IuI" id="Q4O-rb-cc4"/>
+                        <outlet property="phoneNumberTextFieldView" destination="kvT-qL-0Ub" id="Wmo-dA-iXM"/>
+                        <outlet property="scrollView" destination="tFO-jK-LfR" id="ejZ-YO-vcP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="2C333C">
+            <color red="0.17254901960784313" green="0.20000000000000001" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="69707A">
+            <color red="0.41176470588235292" green="0.4392156862745098" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="818995">
+            <color red="0.50588235294117645" green="0.53725490196078429" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="E5E8EC">
+            <color red="0.89803921568627454" green="0.90980392156862744" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
